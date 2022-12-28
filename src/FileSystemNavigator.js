@@ -13,12 +13,14 @@ function FileSystemNavigator() {
 
   return (
     <div>
-       <TreeView
+      <TreeView
       aria-label="file system navigator"
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
+    
       // sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
     >
+     
       <TreeItem nodeId="1" label="Applications">
         <TreeItem nodeId="2" label="Calendar" />
       </TreeItem>
@@ -30,6 +32,7 @@ function FileSystemNavigator() {
           }} nodeId="8" label="sample" />
         </TreeItem>
       </TreeItem>
+      
     </TreeView>
     </div>
   )
